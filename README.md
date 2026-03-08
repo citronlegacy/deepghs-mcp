@@ -4,6 +4,9 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![MCP](https://img.shields.io/badge/MCP-compatible-green)
 
+<a href="https://glama.ai/mcp/servers/citronlegacy/deepghs-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/citronlegacy/deepghs-mcp/badge" alt="DeepGHS MCP server rating" />
+</a>
 
 A Python [MCP](https://modelcontextprotocol.io/) server for the [DeepGHS](https://huggingface.co/deepghs) anime AI ecosystem. Connect it to any MCP-compatible client (Claude Desktop, Cursor, etc.) to browse datasets, discover pre-built character training sets, look up tags across 18 platforms, and generate complete data pipeline scripts — all directly from your AI assistant.
 
