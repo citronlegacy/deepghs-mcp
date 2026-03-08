@@ -1,0 +1,44 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.citronlegacy/deepghs-mcp",
+  "title": "DeepGHS MCP",
+  "description": "MCP server for the DeepGHS anime AI ecosystem. Browse 8M+ image datasets (Danbooru2024, Sankaku, Gelbooru, Zerochan), search tags across 18 platforms, find pre-built LoRA character datasets, and generate complete waifuc data pipeline scripts for Stable Diffusion training.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/citronlegacy/deepghs-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "deepghs-mcp",
+      "version": "1.0.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "HF_TOKEN",
+          "description": "HuggingFace API token. Optional for public datasets but recommended to avoid rate limiting. Required for gated/private repositories. Get yours at https://huggingface.co/settings/tokens",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/citronlegacy/deepghs-mcp:1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "HF_TOKEN",
+          "description": "HuggingFace API token. Optional for public datasets but recommended to avoid rate limiting. Required for gated/private repositories.",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}
